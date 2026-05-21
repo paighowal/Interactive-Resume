@@ -31,7 +31,6 @@
 * [⏳ Interactive Career Timeline (Collapsible)](#-interactive-career-timeline-collapsible)
 * [🎓 Education & Credentials](#-education--credentials)
 * [📜 Professional Certifications](#-professional-certifications)
-* [🚀 Launching This Repository on GitHub Pages](#-launching-this-repository-on-github-pages)
 
 ---
 
