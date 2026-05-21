@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nitin Paighowal - Interactive Resume Infographic</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts (Plus Jakarta Sans & Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons for Beautiful Visuals -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0fbfb',
+                            100: '#dcf6f6',
+                            200: '#beecee',
+                            300: '#90dcde',
+                            400: '#5bc3c7',
+                            500: '#3fa6ab',
+                            600: '#34878c',
+                            700: '#2e6f73',
+                            800: '#2a5b5e',
+                            900: '#274d50',
+                            950: '#143134',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0b1329;
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(30, 58, 138, 0.15) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(13, 148, 136, 0.1) 0px, transparent 50%);
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glass-card-hover {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .glass-card-hover:hover {
+            transform: translateY(-4px);
+            border-color: rgba(91, 195, 199, 0.4);
+            box-shadow: 0 12px 30px -10px rgba(91, 195, 199, 0.2);
+        }
+        .timeline-line {
+            background: linear-gradient(to bottom, #5bc3c7 0%, #3b82f6 50%, #1e3a8a 100%);
+        }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1e293b;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #334155;
+        }
+    </style>
+</head>
+<body class="text-slate-100 min-h-screen antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- Top Glow Header -->
+    <header class="sticky top-0 z-50 glass-card border-b border-slate-800/80 px-4 py-4 md:px-8">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-3">
+                <div class="h-10 w-10 rounded-xl bg-gradient-to-tr from-brand-400 to-blue-600 flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-brand-500/20">
+                    NP
+                </div>
+                <div>
+                    <h1 class="font-heading font-extrabold text-xl tracking-tight bg-gradient-to-r from-white via-slate-200 to-brand-300 bg-clip-text text-transparent">NITIN PAIGHOWAL</h1>
+                    <p class="text-xs text-slate-400 font-medium tracking-wide">Associate Director, Advanced R&D Data Solutions | AI/ML & Analytics Lead</p>
+                </div>
+            </div>
+            
+            <!-- Quick Contact & Links -->
+            <div class="flex flex-wrap items-center justify-center gap-3 text-sm">
+                <a href="mailto:nitin.paighowal@gmail.com" class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-800/60 hover:bg-slate-800 border border-slate-700/50 hover:border-slate-600 transition-all text-xs">
+                    <i class="fa-regular fa-envelope text-brand-400"></i> nitin.paighowal@gmail.com
+                </a>
+                <span class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-800/60 border border-slate-700/50 text-xs text-slate-300">
+                    <i class="fa-solid fa-phone text-brand-400"></i> 813-585-0775
+                </span>
+                <span class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-xs text-emerald-400 font-medium">
+                    <i class="fa-solid fa-id-card"></i> Green Card Holder (US Auth)
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 py-8 md:px-8 space-y-12">
+
+        <!-- HERO SECTION -->
+        <section class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+            <!-- Summary Column -->
+            <div class="lg:col-span-7 flex flex-col justify-between glass-card p-6 md:p-8 rounded-3xl relative overflow-hidden">
+                <div class="absolute -right-10 -top-10 w-40 h-40 bg-brand-500/10 rounded-full blur-3xl pointer-events-none"></div>
+                
+                <div class="space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-xs text-brand-300 font-semibold tracking-wider uppercase">
+                        <span class="flex h-2.5 w-2.5 relative">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-brand-500"></span>
+                        </span>
+                        About Nitin
+                    </div>
+                    <h2 class="font-heading font-extrabold text-3xl md:text-4xl text-white leading-tight">
+                        Bridging <span class="bg-gradient-to-r from-brand-300 to-blue-400 bg-clip-text text-transparent">AI/ML Engineering</span> & <span class="text-blue-400">Pharmaceutical Innovation</span>
+                    </h2>
+                    <p class="text-slate-300 text-base md:text-lg leading-relaxed font-light">
+                        Over <strong class="text-white font-semibold">13+ years</strong> architecting advanced analytics pipelines, high-impact clinical/commercial products, and state-of-the-art Generative AI frameworks (RAG, LLMs, NLP). Proven leader scaling cross-functional data initiatives for Fortune 500 enterprises and global pharmaceutical leaders.
+                    </p>
+                </div>
+
+                <div class="mt-8 pt-6 border-t border-slate-800/80 flex flex-wrap gap-4 items-center justify-between">
+                    <!-- Professional Portfolios -->
+                    <div class="flex flex-wrap gap-3">
+                        <a href="https://www.linkedin.com/in/paighowal" target="_blank" class="p-2 bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-brand-300 rounded-xl transition-all border border-slate-700/60" title="LinkedIn Profile">
+                            <i class="fa-brands fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="https://github.com/paighowal" target="_blank" class="p-2 bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-brand-300 rounded-xl transition-all border border-slate-700/60" title="GitHub Portfolio">
+                            <i class="fa-brands fa-github text-xl"></i>
+                        </a>
+                        <a href="https://nitinpango.wixsite.com/about" target="_blank" class="px-3 py-2 bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-brand-300 rounded-xl transition-all border border-slate-700/60 text-xs font-semibold flex items-center gap-2" title="Wix Portfolio">
+                            <i class="fa-solid fa-briefcase"></i> Portfolio
+                        </a>
+                        <a href="https://public.tableau.com/app/profile/paighowal/vizzes" target="_blank" class="px-3 py-2 bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-brand-300 rounded-xl transition-all border border-slate-700/60 text-xs font-semibold flex items-center gap-2" title="Tableau Public Profile">
+                            <i class="fa-solid fa-chart-line"></i> Tableau Vizzes
+                        </a>
+                    </div>
+                    <div class="text-xs text-slate-400">
+                        Based in <span class="text-slate-200 font-semibold"><i class="fa-solid fa-location-dot text-red-400"></i> Louisville, KY</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Highlights Metrics Cards Grid -->
+            <div class="lg:col-span-5 grid grid-cols-2 gap-4">
+                <div class="glass-card glass-card-hover p-6 rounded-2xl flex flex-col justify-between group">
+                    <div class="h-10 w-10 rounded-xl bg-indigo-500/10 flex items-center justify-center text-indigo-400 mb-4 group-hover:bg-indigo-500/20 transition-all">
+                        <i class="fa-solid fa-award text-lg"></i>
+                    </div>
+                    <div>
+                        <span class="block text-3xl font-extrabold text-white tracking-tight">6x</span>
+                        <span class="block text-xs font-medium text-indigo-300 mt-1 uppercase tracking-wider">Tableau "Viz of the Day"</span>
+                        <p class="text-[11px] text-slate-400 mt-2">Recognized as a Tableau Featured Author for outstanding storytelling & visual architecture.</p>
+                    </div>
+                </div>
+
+                <div class="glass-card glass-card-hover p-6 rounded-2xl flex flex-col justify-between group">
+                    <div class="h-10 w-10 rounded-xl bg-brand-500/10 flex items-center justify-center text-brand-400 mb-4 group-hover:bg-brand-500/20 transition-all">
+                        <i class="fa-solid fa-brain text-lg"></i>
+                    </div>
+                    <div>
+                        <span class="block text-3xl font-extrabold text-white tracking-tight">92%</span>
+                        <span class="block text-xs font-medium text-brand-300 mt-1 uppercase tracking-wider">Predictive Accuracy</span>
+                        <p class="text-[11px] text-slate-400 mt-2">Machine Learning bottleneck model preventing 7+ months in clinical trial operations delay.</p>
+                    </div>
+                </div>
+
+                <div class="glass-card glass-card-hover p-6 rounded-2xl flex flex-col justify-between group">
+                    <div class="h-10 w-10 rounded-xl bg-blue-500/10 flex items-center justify-center text-blue-400 mb-4 group-hover:bg-blue-500/20 transition-all">
+                        <i class="fa-solid fa-bolt text-lg"></i>
+                    </div>
+                    <div>
+                        <span class="block text-3xl font-extrabold text-white tracking-tight">5x</span>
+                        <span class="block text-xs font-medium text-blue-300 mt-1 uppercase tracking-wider">Compliance Speed</span>
+                        <p class="text-[11px] text-slate-400 mt-2">Accelerated Regulatory Intelligence using automated NLP alerts & compliance checks.</p>
+                    </div>
+                </div>
+
+                <div class="glass-card glass-card-hover p-6 rounded-2xl flex flex-col justify-between group">
+                    <div class="h-10 w-10 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-400 mb-4 group-hover:bg-emerald-500/20 transition-all">
+                        <i class="fa-solid fa-piggy-bank text-lg"></i>
+                    </div>
+                    <div>
+                        <span class="block text-3xl font-extrabold text-white tracking-tight">$1M+</span>
+                        <span class="block text-xs font-medium text-emerald-300 mt-1 uppercase tracking-wider">Resource Tax Savings</span>
+                        <p class="text-[11px] text-slate-400 mt-2">Through custom-built automated capacity planning & Workday resource tracking dashboards.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- INTERACTIVE TALENT MATRIX & SKILLS SELECTOR -->
+        <section class="glass-card rounded-3xl p-6 md:p-8 space-y-6 relative">
+            <div class="absolute right-6 top-6 opacity-5 pointer-events-none">
+                <i class="fa-solid fa-cubes text-[120px] text-brand-400"></i>
+            </div>
+            
+            <div class="space-y-2">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-xs text-indigo-300 font-semibold uppercase tracking-wider">
+                    Interactive Skills Matrix
+                </div>
+                <h3 class="text-2xl font-heading font-extrabold text-white">
+                    Explore Skills & Dynamic Career Mapping
+                </h3>
+                <p class="text-sm text-slate-300 max-w-2xl">
+                    Click on any technology badge below to highlight which companies and experiences utilized that skill. Explore Nitin's stack!
+                </p>
+            </div>
+
+            <!-- Filter Categories Tabs -->
+            <div class="flex flex-wrap gap-2 border-b border-slate-800 pb-4">
+                <button onclick="filterSkills('all')" id="tab-all" class="skill-tab active px-4 py-2 text-xs rounded-lg font-semibold bg-brand-500 text-slate-900 border border-brand-400 transition-all">
+                    Show All
+                </button>
+                <button onclick="filterSkills('ai')" id="tab-ai" class="skill-tab px-4 py-2 text-xs rounded-lg font-semibold bg-slate-800/80 text-slate-300 border border-slate-700/50 hover:bg-slate-700 transition-all">
+                    AI/ML & GenAI
+                </button>
+                <button onclick="filterSkills('bi')" id="tab-bi" class="skill-tab px-4 py-2 text-xs rounded-lg font-semibold bg-slate-800/80 text-slate-300 border border-slate-700/50 hover:bg-slate-700 transition-all">
+                    BI & Analytics Tools
+                </button>
+                <button onclick="filterSkills('code')" id="tab-code" class="skill-tab px-4 py-2 text-xs rounded-lg font-semibold bg-slate-800/80 text-slate-300 border border-slate-700/50 hover:bg-slate-700 transition-all">
+                    Programming Languages
+                </button>
+                <button onclick="filterSkills('data')" id="tab-data" class="skill-tab px-4 py-2 text-xs rounded-lg font-semibold bg-slate-800/80 text-slate-300 border border-slate-700/50 hover:bg-slate-700 transition-all">
+                    Databases & Infrastructure
+                </button>
+                <button onclick="filterSkills('certs')" id="tab-certs" class="skill-tab px-4 py-2 text-xs rounded-lg font-semibold bg-slate-800/80 text-slate-300 border border-slate-700/50 hover:bg-slate-700 transition-all">
+                    Professional Certs
+                </button>
+            </div>
+
+            <!-- Skills Grid -->
+            <div id="skills-grid" class="flex flex-wrap gap-3">
+                <!-- AI/ML -->
+                <button onclick="selectSkill('RAG', 'ai')" class="skill-btn ai px-4 py-2.5 rounded-xl bg-slate-900/90 text-sm border border-slate-800 hover:border-slate-500 text-slate-300 hover:text-white transition-all flex items-center gap-2" data-skill="RAG">
+                    <i class="fa-solid fa-gears text-brand-400"></i> RAG / Vector Search
+                </button>
+                <button onclick="selectSkill('LLMs', 'ai')" class="skill-btn ai px-4 py-2.5 rounded-xl bg-slate-900/90 text-sm border border-slate-800 hover:border-slate-500 text-slate-300 hover:text-white transition-all flex items-center gap-2" data-skill="LLMs">
+                    <i class="fa-solid fa-brain text-purple-400"></i> LLMs (LangChain / LlamaIndex)
+                </button>
+                <button onclick="selectSkill('NLP', 'ai')" class="skill-btn ai px-4 py-2.5 rounded-xl bg-slate-900/90 text-sm border border-slate-800 hover:border-slate-500 text-slate-300 hover:text-white transition-all flex items-center gap-2" data-skill="NLP">
+                    <i class="fa-solid fa-language text-cyan-400"></i> NLP Algorithms
+                </button>
+                <button onclick="selectSkill('VectorDB', 'ai')" class="skill-btn ai px-4 py-2.5 rounded-xl bg-slate-900/90 text-sm border border-slate-800 hover:border-slate-500 text-slate-300 hover:text-white transition-all flex items-center gap-2" data-skill="VectorDB">
+                    <i class="fa-solid fa-cube text-emerald-400"></i> Vector Databases (ChromaDB)
+                </button>
+                <button onclick="selectSkill('GraphDB', 'ai')" class="skill-btn ai px-4 py-2.5 rounded-xl bg-slate-900/90 text-sm border border-slate-800 hover:border-slate-500 text-slate-300 hover:text-white transition-all flex items-center gap-2" data-skill="GraphDB">
+                    <i class="fa-solid fa-network-wired text-indigo-400"></i> GraphDB (AWS Neptune)
+                </button>
+
+                <!-- BI / Analytics -->
+                <button onclick="selectSkill('Tableau', 'bi')" class="skill-btn bi px-4 py-2.5 rounded-xl bg-slate-900/90 text-sm border border-slate-800 hover:border-slate-500 text-slate-300 hover:text-white transition-all flex items-center gap-2" data-skill="Tableau">
+                    <i class="fa-solid fa-chart-pie text-sky-400"></i> Tableau (6x Viz of Day)
+                </button>
+                <button onclick="selectSkill('PowerBI', 'bi')" class="skill-btn bi px-4 py-2.5 rounded-xl bg-slate-900/90 text-sm border border-slate-800 hover:border-slate-500 text-slate-300 hover:text-white transition-all flex items-center gap-2" data-skill="PowerBI">
+                    <i class="fa-solid fa-chart-column text-yellow-500"></i> Power BI
+                </button>
+                <button onclick="selectSkill('Alteryx', 'bi')" class="skill-btn bi px-4 py-2.5 rounded-xl bg-slate-900/90 text-sm border border-slate-800 hover:border-slate-500 text-slate-300 hover:text-white transition-all flex items-center gap-2" data-skill="Alteryx">
+                    <i class="fa-solid fa-wand-magic-sparkles text-orange-400"></i> Alteryx Advanced
+                </button>
+                <button onclick="selectSkill('Dataiku', 'bi')" class="skill-btn bi px-4 py-2.5 rounded-xl bg-slate-900/90 text-sm border border-slate-800 hover:border-slate-500 text-slate-300 hover:text-white transition-all flex items-center gap-2" data-skill="Dataiku">
+                    <i class="fa-solid fa-shield-halved text-rose-400"></i> Dataiku Core Designer
+                </button>
+                <button onclick="selectSkill('Spotfire', 'bi')" class="skill-btn bi px-4 py-2.5 rounded-xl bg-slate-900/90 text-sm border border-slate-800 hover:border-slate-500 text-slate-300 hover:text-white transition-all flex items-center gap-2" data-skill="Spotfire">
+                    <i class="fa-solid fa-bolt text-red-400"></i> TIBCO Spotfire
+                </button>
+                <button onclick="selectSkill('Qlik', 'bi')" class="skill-btn bi px-4 py-2.5 rounded-xl bg-slate-900/90 text-sm border border-slate-800 hover:border-slate-500 text-slate-300 hover:text-white transition-all flex items-center gap-2" data-skill="Qlik">
+                    <i class="fa-solid fa-circle-dot text-emerald-500"></i> Qlik Sense
+                </button>
+
+                <!-- Code -->
+                <button onclick="selectSkill('Python', 'code')" class="skill-btn code px-4 py-2.5 rounded-xl bg-slate-900/90 text-sm border border-slate-800 hover:border-slate-500 text-slate-300 hover:text-white transition-all flex items-center gap-2" data-skill="Python">
+                    <i class="fa-brands fa-python text-amber-400"></i> Python (RAG, ML, RPA)
+                </button>
+                <button onclick="selectSkill('R', 'code')" class="skill-btn code px-4 py-2.5 rounded-xl bg-slate-900/90 text-sm border border-slate-800 hover:border-slate-500 text-slate-300 hover:text-white transition-all flex items-center gap-2" data-skill="R">
+                    <i class="fa-solid fa-registered text-blue-400"></i> R Language / Shiny
+                </button>
+                <button onclick="selectSkill('SQL', 'code')" class="skill-btn code px-4 py-2.5 rounded-xl bg-slate-900/90 text-sm border border-slate-800 hover:border-slate-500 text-slate-300 hover:text-white transition-all flex items-center gap-2" data-skill="SQL">
+                    <i class="fa-solid fa-database text-teal-400"></i> Complex SQL / PL-SQL
+                </button>
+                <button onclick="selectSkill('SAS', 'code')" class="skill-btn code px-4 py-2.5 rounded-xl bg-slate-900/90 text-sm border border-slate-800 hover:border-slate-500 text-slate-300 hover:text-white transition-all flex items-center gap-2" data-skill="SAS">
+                    <i class="fa-solid fa-code text-indigo-400"></i> SAS Base Programmer
+                </button>
+                <button onclick="selectSkill('VBA', 'code')" class="skill-btn code px-4 py-2.5 rounded-xl bg-slate-900/90 text-sm border border-slate-800 hover:border-slate-500 text-slate-300 hover:text-white transition-all flex items-center gap-2" data-skill="VBA">
+                    <i class="fa-solid fa-file-code text-zinc-400"></i> VBA & Macros
+                </button>
+
+                <!-- Databases -->
+                <button onclick="selectSkill('Snowflake', 'data')" class="skill-btn data px-4 py-2.5 rounded-xl bg-slate-900/90 text-sm border border-slate-800 hover:border-slate-500 text-slate-300 hover:text-white transition-all flex items-center gap-2" data-skill="Snowflake">
+                    <i class="fa-solid fa-snowflake text-sky-300"></i> Snowflake RWE Analytics
+                </button>
+                <button onclick="selectSkill('AWS', 'data')" class="skill-btn data px-4 py-2.5 rounded-xl bg-slate-900/90 text-sm border border-slate-800 hover:border-slate-500 text-slate-300 hover:text-white transition-all flex items-center gap-2" data-skill="AWS">
+                    <i class="fa-brands fa-aws text-amber-500"></i> AWS Cloud & Redshift
+                </button>
+                <button onclick="selectSkill('ETL', 'data')" class="skill-btn data px-4 py-2.5 rounded-xl bg-slate-900/90 text-sm border border-slate-800 hover:border-slate-500 text-slate-300 hover:text-white transition-all flex items-center gap-2" data-skill="ETL">
+                    <i class="fa-solid fa-arrows-split-up-and-left text-purple-400"></i> Informatica IICS / ETL
+                </button>
+                <button onclick="selectSkill('SAP', 'data')" class="skill-btn data px-4 py-2.5 rounded-xl bg-slate-900/90 text-sm border border-slate-800 hover:border-slate-500 text-slate-300 hover:text-white transition-all flex items-center gap-2" data-skill="SAP">
+                    <i class="fa-solid fa-cubes-stacked text-blue-500"></i> SAP ERP & SOX
+                </button>
+
+                <!-- Certifications -->
+                <button onclick="selectSkill('SixSigma', 'certs')" class="skill-btn certs px-4 py-2.5 rounded-xl bg-slate-900/90 text-sm border border-slate-800 hover:border-slate-500 text-slate-300 hover:text-white transition-all flex items-center gap-2" data-skill="SixSigma">
+                    <i class="fa-solid fa-award text-yellow-400"></i> Six Sigma Black Belt
+                </button>
+            </div>
+
+            <!-- Dynamic Info Output (Hidden by default, shown when a skill is active) -->
+            <div id="skill-description-box" class="hidden animate-fade-in p-4 rounded-2xl bg-brand-950/40 border border-brand-500/30 text-slate-200 text-sm flex items-start gap-3">
+                <div class="h-6 w-6 mt-0.5 rounded-full bg-brand-500/10 flex items-center justify-center text-brand-300 shrink-0">
+                    <i class="fa-solid fa-circle-info"></i>
+                </div>
+                <div>
+                    <span id="skill-title" class="font-bold text-white block mb-0.5">Selected Skill</span>
+                    <p id="skill-desc" class="text-xs text-slate-300 leading-relaxed"></p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- CAREER TIMELINE & INTERACTIVE DETAIL VIEWER -->
+        <section class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            
+            <!-- Left Side: Interactive Timeline Selector (5 cols) -->
+            <div class="lg:col-span-5 space-y-6">
+                <div class="space-y-2">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-xs text-blue-300 font-semibold uppercase tracking-wider">
+                        Interactive Career Roadmap
+                    </div>
+                    <h3 class="text-2xl font-heading font-extrabold text-white">Career Timeline</h3>
+                    <p class="text-sm text-slate-400">Hover or click a role to dive deep into Nitin's specific project outcomes, engineering achievements, and methodologies.</p>
+                </div>
+
+                <!-- Custom Interactive Timeline Component -->
+                <div class="relative pl-6 space-y-6 border-l-2 border-slate-800">
+                    <!-- Active background indicator glow (behind hovered item) -->
+                    <div class="absolute left-0 w-[2px] timeline-line h-full top-0 pointer-events-none opacity-40"></div>
+
+                    <!-- Jazz Pharmaceuticals -->
+                    <div class="timeline-item group relative cursor-pointer" onclick="activateExperience(0)" onmouseenter="activateExperience(0)">
+                        <div class="absolute -left-[31px] top-1.5 h-4 w-4 rounded-full border-4 border-[#0b1329] bg-brand-400 ring-4 ring-brand-500/20 transition-all duration-300 group-[.active]:bg-brand-300 group-[.active]:ring-brand-400/40 group-[.highlighted]:scale-125"></div>
+                        <div class="p-4 rounded-xl transition-all duration-300 bg-slate-900/40 hover:bg-slate-800/60 border border-transparent hover:border-slate-700/50 group-[.active]:bg-slate-800/80 group-[.active]:border-brand-500/40 group-[.highlighted]:border-yellow-500/40">
+                            <span class="text-xs font-semibold text-brand-300">Jun 2020 - May 2026</span>
+                            <h4 class="font-heading font-bold text-base text-white mt-0.5 group-[.active]:text-brand-300 transition-colors">Associate Director, Advanced R&D</h4>
+                            <p class="text-xs text-slate-400 font-medium">Jazz Pharmaceuticals (Remote, USA)</p>
+                            <div class="flex flex-wrap gap-1.5 mt-2.5">
+                                <span class="text-[9px] font-semibold tracking-wider uppercase px-2 py-0.5 bg-slate-800 border border-slate-700 text-slate-300 rounded">RAG</span>
+                                <span class="text-[9px] font-semibold tracking-wider uppercase px-2 py-0.5 bg-slate-800 border border-slate-700 text-slate-300 rounded">AWS</span>
+                                <span class="text-[9px] font-semibold tracking-wider uppercase px-2 py-0.5 bg-slate-800 border border-slate-700 text-slate-300 rounded">Tableau</span>
+                                <span class="text-[9px] font-semibold tracking-wider uppercase px-2 py-0.5 bg-slate-800 border border-slate-700 text-slate-300 rounded">Python</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Deloitte -->
+                    <div class="timeline-item group relative cursor-pointer" onclick="activateExperience(1)" onmouseenter="activateExperience(1)">
+                        <div class="absolute -left-[31px] top-1.5 h-4 w-4 rounded-full border-4 border-[#0b1329] bg-slate-600 transition-all duration-300 group-[.active]:bg-brand-400 group-[.active]:ring-4 group-[.active]:ring-brand-500/20 group-[.highlighted]:scale-125"></div>
+                        <div class="p-4 rounded-xl transition-all duration-300 bg-slate-900/40 hover:bg-slate-800/60 border border-transparent hover:border-slate-700/50 group-[.active]:bg-slate-800/80 group-[.active]:border-brand-500/40 group-[.highlighted]:border-yellow-500/40">
+                            <span class="text-xs font-semibold text-brand-300">Nov 2018 - Jun 2020</span>
+                            <h4 class="font-heading font-bold text-base text-white mt-0.5 group-[.active]:text-brand-300 transition-colors">Lead Applications Advisor</h4>
+                            <p class="text-xs text-slate-400 font-medium">Deloitte (Philadelphia, PA)</p>
+                            <div class="flex flex-wrap gap-1.5 mt-2.5">
+                                <span class="text-[9px] font-semibold tracking-wider uppercase px-2 py-0.5 bg-slate-800 border border-slate-700 text-slate-300 rounded">AI Automation</span>
+                                <span class="text-[9px] font-semibold tracking-wider uppercase px-2 py-0.5 bg-slate-800 border border-slate-700 text-slate-300 rounded">RPA</span>
+                                <span class="text-[9px] font-semibold tracking-wider uppercase px-2 py-0.5 bg-slate-800 border border-slate-700 text-slate-300 rounded">Alteryx</span>
+                                <span class="text-[9px] font-semibold tracking-wider uppercase px-2 py-0.5 bg-slate-800 border border-slate-700 text-slate-300 rounded">Python</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- United BioSource -->
+                    <div class="timeline-item group relative cursor-pointer" onclick="activateExperience(2)" onmouseenter="activateExperience(2)">
+                        <div class="absolute -left-[31px] top-1.5 h-4 w-4 rounded-full border-4 border-[#0b1329] bg-slate-600 transition-all duration-300 group-[.active]:bg-brand-400 group-[.active]:ring-4 group-[.active]:ring-brand-500/20 group-[.highlighted]:scale-125"></div>
+                        <div class="p-4 rounded-xl transition-all duration-300 bg-slate-900/40 hover:bg-slate-800/60 border border-transparent hover:border-slate-700/50 group-[.active]:bg-slate-800/80 group-[.active]:border-brand-500/40 group-[.highlighted]:border-yellow-500/40">
+                            <span class="text-xs font-semibold text-brand-300">Dec 2017 - Nov 2018</span>
+                            <h4 class="font-heading font-bold text-base text-white mt-0.5 group-[.active]:text-brand-300 transition-colors">Senior BI Analyst</h4>
+                            <p class="text-xs text-slate-400 font-medium">United BioSource Corp (Express Scripts)</p>
+                            <div class="flex flex-wrap gap-1.5 mt-2.5">
+                                <span class="text-[9px] font-semibold tracking-wider uppercase px-2 py-0.5 bg-slate-800 border border-slate-700 text-slate-300 rounded">R</span>
+                                <span class="text-[9px] font-semibold tracking-wider uppercase px-2 py-0.5 bg-slate-800 border border-slate-700 text-slate-300 rounded">Tableau</span>
+                                <span class="text-[9px] font-semibold tracking-wider uppercase px-2 py-0.5 bg-slate-800 border border-slate-700 text-slate-300 rounded">SQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- The Hartford -->
+                    <div class="timeline-item group relative cursor-pointer" onclick="activateExperience(3)" onmouseenter="activateExperience(3)">
+                        <div class="absolute -left-[31px] top-1.5 h-4 w-4 rounded-full border-4 border-[#0b1329] bg-slate-600 transition-all duration-300 group-[.active]:bg-brand-400 group-[.active]:ring-4 group-[.active]:ring-brand-500/20 group-[.highlighted]:scale-125"></div>
+                        <div class="p-4 rounded-xl transition-all duration-300 bg-slate-900/40 hover:bg-slate-800/60 border border-transparent hover:border-slate-700/50 group-[.active]:bg-slate-800/80 group-[.active]:border-brand-500/40 group-[.highlighted]:border-yellow-500/40">
+                            <span class="text-xs font-semibold text-brand-300">Mar 2017 - Nov 2017</span>
+                            <h4 class="font-heading font-bold text-base text-white mt-0.5 group-[.active]:text-brand-300 transition-colors">Associate BI Consultant</h4>
+                            <p class="text-xs text-slate-400 font-medium">The Hartford Financial Services (CT)</p>
+                            <div class="flex flex-wrap gap-1.5 mt-2.5">
+                                <span class="text-[9px] font-semibold tracking-wider uppercase px-2 py-0.5 bg-slate-800 border border-slate-700 text-slate-300 rounded">ETL</span>
+                                <span class="text-[9px] font-semibold tracking-wider uppercase px-2 py-0.5 bg-slate-800 border border-slate-700 text-slate-300 rounded">SAS Base</span>
+                                <span class="text-[9px] font-semibold tracking-wider uppercase px-2 py-0.5 bg-slate-800 border border-slate-700 text-slate-300 rounded">Alteryx</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Express Scripts -->
+                    <div class="timeline-item group relative cursor-pointer" onclick="activateExperience(4)" onmouseenter="activateExperience(4)">
+                        <div class="absolute -left-[31px] top-1.5 h-4 w-4 rounded-full border-4 border-[#0b1329] bg-slate-600 transition-all duration-300 group-[.active]:bg-brand-400 group-[.active]:ring-4 group-[.active]:ring-brand-500/20 group-[.highlighted]:scale-125"></div>
+                        <div class="p-4 rounded-xl transition-all duration-300 bg-slate-900/40 hover:bg-slate-800/60 border border-transparent hover:border-slate-700/50 group-[.active]:bg-slate-800/80 group-[.active]:border-brand-500/40 group-[.highlighted]:border-yellow-500/40">
+                            <span class="text-xs font-semibold text-brand-300">May 2016 - Dec 2016</span>
+                            <h4 class="font-heading font-bold text-base text-white mt-0.5 group-[.active]:text-brand-300 transition-colors">Business Systems Intern</h4>
+                            <p class="text-xs text-slate-400 font-medium">Express Scripts (St. Louis, MO)</p>
+                            <div class="flex flex-wrap gap-1.5 mt-2.5">
+                                <span class="text-[9px] font-semibold tracking-wider uppercase px-2 py-0.5 bg-slate-800 border border-slate-700 text-slate-300 rounded">Tableau Server</span>
+                                <span class="text-[9px] font-semibold tracking-wider uppercase px-2 py-0.5 bg-slate-800 border border-slate-700 text-slate-300 rounded">SharePoint</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Infosys -->
+                    <div class="timeline-item group relative cursor-pointer" onclick="activateExperience(5)" onmouseenter="activateExperience(5)">
+                        <div class="absolute -left-[31px] top-1.5 h-4 w-4 rounded-full border-4 border-[#0b1329] bg-slate-600 transition-all duration-300 group-[.active]:bg-brand-400 group-[.active]:ring-4 group-[.active]:ring-brand-500/20 group-[.highlighted]:scale-125"></div>
+                        <div class="p-4 rounded-xl transition-all duration-300 bg-slate-900/40 hover:bg-slate-800/60 border border-transparent hover:border-slate-700/50 group-[.active]:bg-slate-800/80 group-[.active]:border-brand-500/40 group-[.highlighted]:border-yellow-500/40">
+                            <span class="text-xs font-semibold text-brand-300">Sep 2012 - Jul 2015</span>
+                            <h4 class="font-heading font-bold text-base text-white mt-0.5 group-[.active]:text-brand-300 transition-colors">BI Analyst / Sr. Systems Engineer</h4>
+                            <p class="text-xs text-slate-400 font-medium">Infosys Limited (Pune, India)</p>
+                            <div class="flex flex-wrap gap-1.5 mt-2.5">
+                                <span class="text-[9px] font-semibold tracking-wider uppercase px-2 py-0.5 bg-slate-800 border border-slate-700 text-slate-300 rounded">SAP ECC</span>
+                                <span class="text-[9px] font-semibold tracking-wider uppercase px-2 py-0.5 bg-slate-800 border border-slate-700 text-slate-300 rounded">SQL</span>
+                                <span class="text-[9px] font-semibold tracking-wider uppercase px-2 py-0.5 bg-slate-800 border border-slate-700 text-slate-300 rounded">SOX Compliance</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side: Live Interactive Dashboard (7 cols) -->
+            <div class="lg:col-span-7 sticky top-24 space-y-6">
+                <div class="glass-card rounded-3xl p-6 md:p-8 space-y-6 shadow-2xl relative overflow-hidden min-h-[500px]">
+                    <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-brand-500/5 rounded-full blur-3xl pointer-events-none"></div>
+                    
+                    <!-- Role Detail Header -->
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b border-slate-800/80">
+                        <div>
+                            <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-brand-500/10 text-[10px] font-bold text-brand-300 tracking-wider uppercase mb-2">
+                                <i class="fa-solid fa-industry"></i> Healthcare & Tech Domain Focus
+                            </div>
+                            <h4 id="detail-title" class="font-heading font-extrabold text-2xl text-white">Associate Director, Advanced R&D Data Solutions</h4>
+                            <p id="detail-company" class="text-sm text-slate-300 font-semibold mt-1">Jazz Pharmaceuticals | Remote, USA</p>
+                        </div>
+                        <span id="detail-date" class="text-xs font-bold text-slate-400 bg-slate-800/80 border border-slate-700/60 px-3 py-1.5 rounded-xl block self-start md:self-auto">Jun 2020 - May 2026</span>
+                    </div>
+
+                    <!-- Core Quantitative Highlighting Metrics (Changes dynamically) -->
+                    <div id="detail-metrics" class="grid grid-cols-3 gap-4">
+                        <div class="bg-slate-900/60 border border-slate-800 p-4 rounded-2xl">
+                            <span class="block text-2xl font-bold text-brand-300" id="metric-1-val">6 wks</span>
+                            <span class="block text-[10px] text-slate-400 mt-1 uppercase font-semibold" id="metric-1-lbl">Planning Saved</span>
+                        </div>
+                        <div class="bg-slate-900/60 border border-slate-800 p-4 rounded-2xl">
+                            <span class="block text-2xl font-bold text-blue-400" id="metric-2-val">92%</span>
+                            <span class="block text-[10px] text-slate-400 mt-1 uppercase font-semibold" id="metric-2-lbl">Bottleneck Acc.</span>
+                        </div>
+                        <div class="bg-slate-900/60 border border-slate-800 p-4 rounded-2xl">
+                            <span class="block text-2xl font-bold text-emerald-400" id="metric-3-val">150+ hrs</span>
+                            <span class="block text-[10px] text-slate-400 mt-1 uppercase font-semibold" id="metric-3-lbl">Saved Annually</span>
+                        </div>
+                    </div>
+
+                    <!-- Tabbed Responsibilities categories -->
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-2">
+                            <span class="h-1.5 w-1.5 rounded-full bg-brand-400"></span>
+                            <h5 class="text-xs font-bold text-brand-300 uppercase tracking-wider">Achievements & Contributions</h5>
+                        </div>
+                        
+                        <ul id="detail-bullets" class="space-y-4 text-sm text-slate-300 font-light">
+                            <!-- Injected Dynamically by JS -->
+                        </ul>
+                    </div>
+
+                    <!-- Skills Utilized inside this role -->
+                    <div class="pt-6 border-t border-slate-800/80">
+                        <span class="text-xs font-bold text-slate-400 uppercase tracking-wider block mb-3">Key Technologies Leveraged</span>
+                        <div id="detail-tech-stack" class="flex flex-wrap gap-2">
+                            <!-- Injected Dynamically by JS -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- EDUCATION & CERTIFICATIONS -->
+        <section class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+            
+            <!-- Left: Education (7 cols) -->
+            <div class="lg:col-span-7 space-y-6">
+                <div class="space-y-2">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-xs text-indigo-300 font-semibold uppercase tracking-wider">
+                        Academic Credentials
+                    </div>
+                    <h3 class="text-2xl font-heading font-extrabold text-white">Education Background</h3>
+                </div>
+
+                <div class="space-y-4">
+                    <!-- MBA -->
+                    <div class="glass-card glass-card-hover p-6 rounded-2xl flex items-start gap-4">
+                        <div class="h-12 w-12 rounded-xl bg-indigo-500/10 flex items-center justify-center text-indigo-400 shrink-0">
+                            <i class="fa-solid fa-graduation-cap text-xl"></i>
+                        </div>
+                        <div class="space-y-1">
+                            <div class="flex flex-col md:flex-row md:items-center justify-between gap-1">
+                                <h4 class="font-heading font-bold text-base text-white">Master of Business Administration (MBA)</h4>
+                                <span class="text-xs font-semibold text-brand-300">Oct 2020 - Dec 2022</span>
+                            </div>
+                            <p class="text-sm text-slate-300">University of Illinois - Urbana Champaign</p>
+                            <p class="text-xs text-slate-400">Deepened expertise in technology strategy, cross-functional leadership, and product commercialization.</p>
+                        </div>
+                    </div>
+
+                    <!-- MS MIS -->
+                    <div class="glass-card glass-card-hover p-6 rounded-2xl flex items-start gap-4">
+                        <div class="h-12 w-12 rounded-xl bg-brand-500/10 flex items-center justify-center text-brand-400 shrink-0">
+                            <i class="fa-solid fa-server text-xl"></i>
+                        </div>
+                        <div class="space-y-1">
+                            <div class="flex flex-col md:flex-row md:items-center justify-between gap-1">
+                                <h4 class="font-heading font-bold text-base text-white">M.S. in Management Information Systems</h4>
+                                <span class="text-xs font-semibold text-brand-300">Aug 2015 - Dec 2016</span>
+                            </div>
+                            <p class="text-sm text-slate-300">University of South Florida, Tampa</p>
+                            <p class="text-xs text-slate-400">Specialized in big data architectures, database administration, advanced scripting, and business analytics.</p>
+                        </div>
+                    </div>
+
+                    <!-- B.E. -->
+                    <div class="glass-card glass-card-hover p-6 rounded-2xl flex items-start gap-4">
+                        <div class="h-12 w-12 rounded-xl bg-blue-500/10 flex items-center justify-center text-blue-400 shrink-0">
+                            <i class="fa-solid fa-laptop-code text-xl"></i>
+                        </div>
+                        <div class="space-y-1">
+                            <div class="flex flex-col md:flex-row md:items-center justify-between gap-1">
+                                <h4 class="font-heading font-bold text-base text-white">Bachelor of Engineering in Computer Engineering</h4>
+                                <span class="text-xs font-semibold text-brand-300">Aug 2008 - Jun 2012</span>
+                            </div>
+                            <p class="text-sm text-slate-300">University of Pune, India</p>
+                            <p class="text-xs text-slate-400">Solid foundational architecture training in algorithms, discrete structures, networks, and advanced SQL databases.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Certifications Stack (5 cols) -->
+            <div class="lg:col-span-5 space-y-6">
+                <div class="space-y-2">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-xs text-emerald-300 font-semibold uppercase tracking-wider">
+                        Verified Credentials
+                    </div>
+                    <h3 class="text-2xl font-heading font-extrabold text-white">Certifications</h3>
+                </div>
+
+                <div class="grid grid-cols-1 gap-3">
+                    <div class="glass-card p-4 rounded-xl flex items-center gap-3">
+                        <div class="h-9 w-9 rounded-lg bg-orange-500/15 flex items-center justify-center text-orange-400 text-sm shrink-0">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <div>
+                            <span class="block text-sm font-semibold text-white">Alteryx Advanced Designer</span>
+                            <span class="text-[10px] text-slate-400 font-medium">Expert data preparation & spatial pipeline engineering</span>
+                        </div>
+                    </div>
+
+                    <div class="glass-card p-4 rounded-xl flex items-center gap-3">
+                        <div class="h-9 w-9 rounded-lg bg-sky-500/15 flex items-center justify-center text-sky-400 text-sm shrink-0">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <div>
+                            <span class="block text-sm font-semibold text-white">Tableau Desktop Certified Associate</span>
+                            <span class="text-[10px] text-slate-400 font-medium">Enterprise visual intelligence & storytelling expert</span>
+                        </div>
+                    </div>
+
+                    <div class="glass-card p-4 rounded-xl flex items-center gap-3">
+                        <div class="h-9 w-9 rounded-lg bg-yellow-500/15 flex items-center justify-center text-yellow-400 text-sm shrink-0">
+                            <i class="fa-solid fa-medal"></i>
+                        </div>
+                        <div>
+                            <span class="block text-sm font-semibold text-white">Six Sigma Black Belt Certification</span>
+                            <span class="text-[10px] text-slate-400 font-medium">Process streamlining, resource planning & optimization modeling</span>
+                        </div>
+                    </div>
+
+                    <div class="glass-card p-4 rounded-xl flex items-center gap-3">
+                        <div class="h-9 w-9 rounded-lg bg-indigo-500/15 flex items-center justify-center text-indigo-400 text-sm shrink-0">
+                            <i class="fa-solid fa-code text-sm shrink-0"></i>
+                        </div>
+                        <div>
+                            <span class="block text-sm font-semibold text-white">SAS Certified Base Programmer (SAS 9)</span>
+                            <span class="text-[10px] text-slate-400 font-medium">Structured clinical trial statistical analysis modeling</span>
+                        </div>
+                    </div>
+
+                    <div class="glass-card p-4 rounded-xl flex items-center gap-3">
+                        <div class="h-9 w-9 rounded-lg bg-emerald-500/15 flex items-center justify-center text-emerald-400 text-sm shrink-0">
+                            <i class="fa-solid fa-cube"></i>
+                        </div>
+                        <div>
+                            <span class="block text-sm font-semibold text-white">Dataiku Core Designer</span>
+                            <span class="text-[10px] text-slate-400 font-medium">AI framework development & low-code predictive analytics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer with PDF Export Prompt and Disclaimer -->
+    <footer class="border-t border-slate-800 mt-20 bg-slate-950/80 py-12 px-4 md:px-8">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-sm text-slate-400">
+            <div class="flex items-center gap-3">
+                <div class="h-8 w-8 rounded-lg bg-slate-800 flex items-center justify-center text-brand-400 font-bold text-sm">
+                    NP
+                </div>
+                <span>Nitin Paighowal &copy; 2026. All rights reserved.</span>
+            </div>
+            <div class="flex gap-4">
+                <a href="https://github.com/paighowal" target="_blank" class="hover:text-white transition-colors">GitHub</a>
+                <a href="https://www.linkedin.com/in/paighowal" target="_blank" class="hover:text-white transition-colors">LinkedIn</a>
+                <a href="https://nitinpango.wixsite.com/about" target="_blank" class="hover:text-white transition-colors">About Me</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Logic Script -->
+    <script>
+        // Full Dataset mapping Nitin's experience
+        const experiences = [
+            {
+                title: "Associate Director, Advanced R&D Data Solutions",
+                company: "Jazz Pharmaceuticals | Remote, USA",
+                date: "Jun 2020 - May 2026",
+                skills: ["RAG", "LLMs", "NLP", "VectorDB", "GraphDB", "Tableau", "PowerBI", "Alteryx", "Dataiku", "Spotfire", "Qlik", "Python", "R", "SQL", "Snowflake", "AWS", "ETL"],
+                metrics: {
+                    m1: ["6 wks", "Planning Saved"],
+                    m2: ["92%", "ML Model Acc."],
+                    m3: ["$1M", "Tax Savings"]
+                },
+                bullets: [
+                    "<strong>Engineered RAG-based AI search engine</strong> for Global Trial Inclusiveness, automating compliance checks against EMA and MHRA guidelines; slashed regulatory planning cycles by 6 weeks and ensured 100% adherence to diversity mandates.",
+                    "<strong>Developed predictive ML models</strong> for clinical trial operations that identified potential bottlenecks with 92% accuracy, preventing an estimated 7 months in trial delays.",
+                    "<strong>Automated Regulatory Intelligence via NLP algorithms</strong> to monitor global policy shifts, increasing risk-detection speed by 5x and ensuring zero missed alerts for labeling updates and product recalls across the Jazz portfolio.",
+                    "<strong>Architected AWS cloud-based centralized data lake/warehouse</strong> integrating 15+ disparate R&D systems, enabling reliable, governed data access for 100+ R&D professionals.",
+                    "<strong>Drove Snowflake adoption</strong> for RWE analytics and oversaw the migration of clinical data workflows into Snowflake to improve performance, scalability, and accessibility.",
+                    "<strong>Developed Capacity Planning and Resource Management dashboards</strong> using Planisware, Workday, and Fieldglass data to track R&D resource utilization, generating ~$1M in tax savings.",
+                    "<strong>Led migration of legacy BI platforms</strong> (Spotfire, QlikView, Tableau) to unified Power BI enterprise architecture, eliminating fragmentation and reducing maintenance overhead by 60%."
+                ]
+            },
+            {
+                title: "Lead Applications Advisor and Engineer",
+                company: "Deloitte | Philadelphia, PA",
+                date: "Nov 2018 - Jun 2020",
+                skills: ["Alteryx", "Python", "VBA", "SQL", "SAP"],
+                metrics: {
+                    m1: ["10%", "Efficiency Gain"],
+                    m2: ["2+", "Custom RPA Bots"],
+                    m3: ["50+", "Alteryx Macros"]
+                },
+                bullets: [
+                    "Delivered core consulting engagements in data wrangling, visualization, predictive modeling, and AI/ML automation for external pharmaceutical and enterprise clients.",
+                    "<strong>Implemented RPA bots using Python/VBA</strong> for OCR and SAP ERP data extraction, resulting in a 10% increase in data processing efficiency.",
+                    "Created enterprise-grade macros, analytical applications, and scalable processing workflows in Alteryx to eliminate manual data-wrangling efforts."
+                ]
+            },
+            {
+                title: "Senior BI Analyst",
+                company: "United BioSource Corporation | Blue Bell, PA",
+                date: "Dec 2017 - Nov 2018",
+                skills: ["R", "Tableau", "SQL"],
+                metrics: {
+                    m1: ["95%+", "Claim Accuracy"],
+                    m2: ["10+", "Interactive Vizzes"],
+                    m3: ["100%", "Static Reporting"]
+                },
+                bullets: [
+                    "<strong>Applied statistical analysis and predictive modeling using R</strong> for ERA/835 claim datasets, improving accuracy of patient responsibility determinations.",
+                    "Architected interactive Tableau dashboards for commercial and R&D teams, centralizing drug sales, product operations, and HCP call analytics data.",
+                    "Developed and optimized complex SSRS reports using stored procedures and advanced SQL code to manage static regulatory and client billing workflows."
+                ]
+            },
+            {
+                title: "Associate Business Intelligence Consultant",
+                company: "The Hartford Financial Services | CT",
+                date: "Mar 2017 - Nov 2017",
+                skills: ["SAS", "R", "Alteryx", "SQL"],
+                metrics: {
+                    m1: ["4+", "Core Databases"],
+                    m2: ["30%", "Pipeline Speedup"],
+                    m3: ["10M+", "Records Handled"]
+                },
+                bullets: [
+                    "Constructed scalable, clean ETL pipelines using SAS Base, R programming, and Alteryx for risk analytics and complex data engineering solutions.",
+                    "Utilized advanced Oracle SQL, SQL Server, and Hadoop clusters to parse and extract critical risk modeling metrics."
+                ]
+            },
+            {
+                title: "Business Systems Intern",
+                company: "Express Scripts | St Louis, MO",
+                date: "May 2016 - Dec 2016",
+                skills: ["Tableau", "SQL"],
+                metrics: {
+                    m1: ["20+", "Dashboards Managed"],
+                    m2: ["100%", "Refresh Reliability"],
+                    m3: ["12+", "Teams Served"]
+                },
+                bullets: [
+                    "Orchestrated Tableau Server administration including dashboard uploads, scheduling data refreshes, and managing row-level security permissions.",
+                    "Created and optimized corporate SharePoint approval workflows for publishing dynamic and static reports across multiple internal business departments."
+                ]
+            },
+            {
+                title: "Business Intelligence Analyst (Sr. Systems Engineer)",
+                company: "Infosys Limited | Pune, India",
+                date: "Sep 2012 - Jul 2015",
+                skills: ["SQL", "SAP"],
+                metrics: {
+                    m1: ["100%", "Compliance Score"],
+                    m2: ["50+", "Weekly Reports"],
+                    m3: ["0", "Audit Inconsistencies"]
+                },
+                bullets: [
+                    "Developed and analyzed weekly & monthly operational risk analysis reports extracted using complex analytical SQL queries.",
+                    "Developed and published SOX Security & Compliance audits by executing Transaction codes directly in SAP ECC and GRC systems."
+                ]
+            }
+        ];
+
+        // Custom descriptions of how Nitin uses specific skills
+        const skillNotes = {
+            "RAG": "Engineered advanced RAG-based AI search engines at Jazz Pharmaceuticals to automate Global Trial Inclusiveness and monitor guidelines from regulatory authorities (EMA & MHRA).",
+            "LLMs": "Utilizes LangChain and LlamaIndex inside scalable python microservices to implement advanced LLM architectures, context routing, and cognitive R&D agents.",
+            "NLP": "Automated clinical regulatory intelligence monitoring through NLP-driven document parsers and compliance change-detection pipelines.",
+            "VectorDB": "Leveraged modern Vector Databases (such as ChromaDB) to build highly accurate retrieval stages for enterprise clinical protocol searches.",
+            "GraphDB": "Utilizes Graph Databases like AWS Neptune to map relationships between complex therapeutic areas, molecular pathways, and global trial footprints.",
+            "Tableau": "Tableau Desktop Certified Associate. Named Tableau 'Viz of the Day' 6x and recognized as a Tableau Featured Author for designing top-tier analytical solutions.",
+            "PowerBI": "Led Jazz Pharmaceuticals' BI consolidation. Migrated fragmented Spotfire and Qlik instances to unified, scalable Power BI enterprise architectures.",
+            "Alteryx": "Alteryx Advanced Certified. Designed scalable ETL data prep flows and analytical macros to eliminate hundreds of manual hours in finance & operation workflows.",
+            "Dataiku": "Certified Dataiku Core Designer. Developed centralized ML-ops orchestration and analytical flows that combine low-code workflows with custom python logic.",
+            "Spotfire": "Maintained Spotfire legacy R&D reporting platforms, driving data accuracy improvements before orchestrating migration paths to modernized systems.",
+            "Qlik": "Spearheaded consolidation of old QlikView dashboards into modern corporate systems, drastically reducing BI software footprints and maintaining 100% data fidelity.",
+            "Python": "Primary language for advanced automation, RPA bots, OCR implementation, and core AI/ML development (RAG, prediction engines, text parsing).",
+            "R": "Leveraged extensively at UBS and The Hartford for clinical claims datasets, statistical modeling, and RShiny reporting engines.",
+            "SQL": "Writing complex multi-join SQL, PL/SQL scripts, and analytical functions on enterprise databases like Oracle, Teradata, Vertica, Redshift, and Hadoop.",
+            "SAS": "Certified Base Programmer (SAS 9). Engineered risk analysis metrics and financial ledger ETL processes.",
+            "VBA": "Developed robust VBA scripting macros for automated Excel extraction and robotic process automation (RPA) tasks at Deloitte.",
+            "Snowflake": "Engineered massive clinical trial migrations into Snowflake, configuring query optimizations to allow instantaneous RWE analytics.",
+            "AWS": "Architected AWS R&D cloud-based data lakes integrating over 15 distinct source systems.",
+            "ETL": "Mastered ETL/ELT ingestion patterns using Informatica IICS, Alteryx, and specialized python framework schedulers.",
+            "SAP": "Processed SOX Security and Audits directly within SAP ECC & GRC systems, implementing RPA scripts for rapid data extracts.",
+            "SixSigma": "Six Sigma Black Belt Certified. Expertly aligned data pipelines with organizational KPIs to extract resource savings."
+        };
+
+        // Activates specific experience in the viewer
+        function activateExperience(index) {
+            // Update active styling on timeline nodes
+            const items = document.querySelectorAll('.timeline-item');
+            items.forEach((item, i) => {
+                if (i === index) {
+                    item.classList.add('active');
+                } else {
+                    item.classList.remove('active');
+                }
+            });
+
+            const exp = experiences[index];
+            
+            // Populate Dynamic Details Card
+            document.getElementById('detail-title').innerText = exp.title;
+            document.getElementById('detail-company').innerText = exp.company;
+            document.getElementById('detail-date').innerText = exp.date;
+
+            // Populate Quantitative KPI Metrics
+            document.getElementById('metric-1-val').innerText = exp.metrics.m1[0];
+            document.getElementById('metric-1-lbl').innerText = exp.metrics.m1[1];
+            document.getElementById('metric-2-val').innerText = exp.metrics.m2[0];
+            document.getElementById('metric-2-lbl').innerText = exp.metrics.m2[1];
+            document.getElementById('metric-3-val').innerText = exp.metrics.m3[0];
+            document.getElementById('metric-3-lbl').innerText = exp.metrics.m3[1];
+
+            // Build Bullet Points
+            const bulletContainer = document.getElementById('detail-bullets');
+            bulletContainer.innerHTML = '';
+            exp.bullets.forEach(bullet => {
+                const li = document.createElement('li');
+                li.className = 'flex items-start gap-2.5';
+                li.innerHTML = `
+                    <span class="h-1.5 w-1.5 rounded-full bg-brand-400 shrink-0 mt-2"></span>
+                    <p class="leading-relaxed text-slate-300 font-light text-xs md:text-sm">${bullet}</p>
+                `;
+                bulletContainer.appendChild(li);
+            });
+
+            // Build Tech Stack Badges
+            const techContainer = document.getElementById('detail-tech-stack');
+            techContainer.innerHTML = '';
+            exp.skills.forEach(skill => {
+                const badge = document.createElement('span');
+                badge.className = 'text-xs px-2.5 py-1 rounded bg-slate-800 border border-slate-700/80 text-slate-300 font-medium hover:border-brand-400 transition-colors';
+                badge.innerText = skill;
+                techContainer.appendChild(badge);
+            });
+        }
+
+        // Selected Skill Matrix Actions
+        let currentSelectedSkill = null;
+
+        function selectSkill(skillName, category) {
+            const descBox = document.getElementById('skill-description-box');
+            const descTitle = document.getElementById('skill-title');
+            const descText = document.getElementById('skill-desc');
+
+            // Toggle active visual states on skills grid
+            const buttons = document.querySelectorAll('.skill-btn');
+            
+            if (currentSelectedSkill === skillName) {
+                // Deselect current
+                currentSelectedSkill = null;
+                descBox.classList.add('hidden');
+                buttons.forEach(btn => btn.classList.remove('ring-2', 'ring-brand-400', 'bg-brand-950/20'));
+                
+                // Clear highlights on timeline
+                const timelineItems = document.querySelectorAll('.timeline-item');
+                timelineItems.forEach(item => item.classList.remove('highlighted'));
+            } else {
+                currentSelectedSkill = skillName;
+                
+                // Activate box with explanation
+                descBox.classList.remove('hidden');
+                descTitle.innerText = `${skillName}`;
+                descText.innerText = skillNotes[skillName] || "Experienced deploying this technology in enterprise pipelines.";
+
+                // Style buttons
+                buttons.forEach(btn => {
+                    if (btn.getAttribute('data-skill') === skillName) {
+                        btn.classList.add('ring-2', 'ring-brand-400', 'bg-brand-950/20');
+                    } else {
+                        btn.classList.remove('ring-2', 'ring-brand-400', 'bg-brand-950/20');
+                    }
+                });
+
+                // Highlight timeline items where this skill was used
+                const timelineItems = document.querySelectorAll('.timeline-item');
+                let foundFirstMatch = false;
+
+                experiences.forEach((exp, index) => {
+                    const timelineNode = timelineItems[index];
+                    if (exp.skills.includes(skillName)) {
+                        timelineNode.classList.add('highlighted');
+                        if (!foundFirstMatch) {
+                            activateExperience(index);
+                            foundFirstMatch = true;
+                        }
+                    } else {
+                        timelineNode.classList.remove('highlighted');
+                    }
+                });
+            }
+        }
+
+        // Skills Filter Tabs
+        function filterSkills(category) {
+            // Manage tabs highlights
+            const tabs = document.querySelectorAll('.skill-tab');
+            tabs.forEach(tab => {
+                if (tab.id === `tab-${category}`) {
+                    tab.classList.add('bg-brand-500', 'text-slate-900', 'border-brand-400');
+                    tab.classList.remove('bg-slate-800/80', 'text-slate-300', 'border-slate-700/50');
+                } else {
+                    tab.classList.remove('bg-brand-500', 'text-slate-900', 'border-brand-400');
+                    tab.classList.add('bg-slate-800/80', 'text-slate-300', 'border-slate-700/50');
+                }
+            });
+
+            // Filter button elements
+            const buttons = document.querySelectorAll('.skill-btn');
+            buttons.forEach(btn => {
+                if (category === 'all' || btn.classList.contains(category)) {
+                    btn.classList.remove('hidden');
+                } else {
+                    btn.classList.add('hidden');
+                }
+            });
+        }
+
+        // Initialize First Experience Details on Page Load
+        window.addEventListener('DOMContentLoaded', () => {
+            activateExperience(0);
+        });
+    </script>
+</body>
+</html>
