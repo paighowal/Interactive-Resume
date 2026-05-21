@@ -254,17 +254,6 @@ Here is a quick snapshot of key metrics engineered over a **13+ year career** br
 
 ---
 
-## 🚀 Launching This Repository on GitHub Pages
-
-This repository is pre-configured to host your fully interactive web resume instantly.
-
-1. **Verify Files**: Ensure both `index.html` (the code) and `README.md` (this file) are committed to the root directory of this repository.
-2. **Configure Pages**: Go to the **Settings** tab in your GitHub repository sidebar.
-3. **Set Build**: Click **Pages** under the "Code and automation" section.
-4. **Deploy Branch**: Change the deployment source to **`Deploy from a branch`**, select **`main`** (or `master`) as the branch, choose **`/ (root)`** as the folder, and click **Save**.
-5. **View Online**: After 60 seconds, GitHub will output your personalized URL (e.g., `https://paighowal.github.io/Interactive-Resume/`).
-
----
 <div align="center">
   <p><b>Designed and developed with ⚡ by Nitin Paighowal</b></p>
 </div>
