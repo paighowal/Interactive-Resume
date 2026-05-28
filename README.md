@@ -1,258 +1,226 @@
-# 📊 Nitin Paighowal — Interactive Resume & Portfolio Infographic
-
 <div align="center">
 
-  <!-- LIVE DEPLOYMENT BANNER -->
-  <a href="https://paighowal.github.io/Interactive-Resume/">
-    <img src="https://img.shields.io/badge/🚀_LAUNCH_INTERACTIVE_INFOGRAPHIC-Click_Here_to_View_Live-00f2fe?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Live Demo" height="48">
-  </a>
+# Nitin Paighowal
 
-  <p align="center">
-    <strong>Associate Director, Advanced R&D Data Solutions | AI/ML, Data Engineering & Analytics Lead</strong>
-  </p>
+**Analytics and AI Leader &nbsp;·&nbsp; Data Engineering &nbsp;·&nbsp; Product Delivery**
 
-  <p align="center">
-    <a href="https://www.linkedin.com/in/paighowal"><img src="https://img.shields.io/badge/LinkedIn-Nitin_Paighowal-blue?style=for-the-badge&logo=linkedin" alt="LinkedIn"></a>
-    <a href="mailto:nitin.paighowal@gmail.com"><img src="https://img.shields.io/badge/Email-nitin.paighowal@gmail.com-red?style=for-the-badge&logo=gmail" alt="Email"></a>
-    <a href="https://public.tableau.com/app/profile/paighowal/vizzes"><img src="https://img.shields.io/badge/Tableau_Public-6x_Viz_of_the_Day-orange?style=for-the-badge&logo=tableau" alt="Tableau Public"></a>
-    <a href="https://github.com/paighowal"><img src="https://img.shields.io/badge/GitHub-paighowal-lightgrey?style=for-the-badge&logo=github" alt="GitHub"></a>
-  </p>
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/paighowal)
+[![Tableau](https://img.shields.io/badge/Tableau-6x_Viz_of_the_Day-E97627?style=for-the-badge&logo=tableau&logoColor=white)](https://public.tableau.com/app/profile/paighowal/vizzes)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-1F4E79?style=for-the-badge&logo=google-chrome&logoColor=white)](https://nitinpango.wixsite.com/about)
+[![GitHub](https://img.shields.io/badge/GitHub-paighowal-181717?style=for-the-badge&logo=github)](https://github.com/paighowal)
 
-  <p align="center">
-    🇺🇸 <strong>US Permanent Resident (Green Card Holder)</strong> | 📍 Louisville, KY | 📱 813-585-0775
-  </p>
+[![Email](https://img.shields.io/badge/nitin.paighowal@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:nitin.paighowal@gmail.com)
+&nbsp;
+![Location](https://img.shields.io/badge/Louisville,_KY-333?style=flat-square&logo=googlemaps&logoColor=white)
+&nbsp;
+![Status](https://img.shields.io/badge/Green_Card_Holder-No_Sponsorship_Needed-2e8b7a?style=flat-square)
+
 </div>
 
 ---
 
-## 🗺️ Quick Navigation
-* [📈 Core Career Highlights](#-core-career-highlights)
-* [🛠️ Interactive Skills Matrix](#%EF%B8%8F-interactive-skills-matrix)
-* [⏳ Interactive Career Timeline (Collapsible)](#-interactive-career-timeline-collapsible)
-* [🎓 Education & Credentials](#-education--credentials)
-* [📜 Professional Certifications](#-professional-certifications)
+## About
+
+Senior data and AI leader specializing in RAG pipelines, hybrid AI architectures, and agentic systems, with a track record of taking data products from concept to production at enterprise scale. I have worked across the full stack, from writing Python pipelines and designing cloud data lakes to leading cross-functional teams and presenting to C-suite stakeholders.
 
 ---
 
-## 📈 Core Career Highlights
+## Career Highlights
 
-Here is a quick snapshot of key metrics engineered over a **13+ year career** bridging AI and pharmaceuticals:
+<div align="center">
 
-<table>
-  <tr>
-    <td align="center" width="25%">
-      <h3>🏆 6x</h3>
-      <p><b>Tableau "Viz of the Day"</b><br><small>Featured global author for visual intelligence & storytelling.</small></p>
-    </td>
-    <td align="center" width="25%">
-      <h3>🧠 92%</h3>
-      <p><b>Predictive Accuracy</b><br><small>Machine learning models built to proactively map clinical trial bottlenecks.</small></p>
-    </td>
-    <td align="center" width="25%">
-      <h3>💰 $1M+</h3>
-      <p><b>Resource Tax Savings</b><br><small>Engineered via automated capacity & resource utilization pipelines.</small></p>
-    </td>
-    <td align="center" width="25%">
-      <h3>⚡ 5x</h3>
-      <p><b>Compliance Speed</b><br><small>Accelerated global policy analysis using Generative AI (RAG) & NLP.</small></p>
-    </td>
-  </tr>
-</table>
+| 13+ Years | 6x | 92% | ~$1M | 5x |
+|:---:|:---:|:---:|:---:|:---:|
+| Experience in analytics, AI and data engineering | Tableau Viz of the Day and Featured Author | ML model accuracy predicting operational bottlenecks | Generated in tax savings via resource analytics | Faster compliance monitoring via agentic NLP |
+
+</div>
 
 ---
 
-## 🛠️ Interactive Skills Matrix
-
-*Click on a category to expand and inspect Nitin's specific command over technology suites.*
+## Skills
 
 <details>
-<summary><b>🤖 Generative AI, LLMs & Machine Learning (Click to Expand)</b></summary>
+<summary><b>Generative AI and Machine Learning</b></summary>
 <br>
 
-* **Architectures**: Retrieval-Augmented Generation (RAG), Large Language Models (LLMs), Multi-Agent Cognitive Frameworks, Natural Language Processing (NLP).
-* **Frameworks & Orchestration**: LangChain, LlamaIndex, HuggingFace, Custom Vector Pipelines.
-* **Vector & Graph Storage**: Vector Databases (ChromaDB, Pinecone), Graph Databases (AWS Neptune).
-* **Predictive ML**: Clustering, classification, bottleneck analysis, risk-modeling engines.
+![RAG](https://img.shields.io/badge/RAG-2e8b7a?style=flat-square)
+![Agentic AI](https://img.shields.io/badge/Agentic_AI-2e8b7a?style=flat-square)
+![Hybrid RAG](https://img.shields.io/badge/Hybrid_RAG-2e8b7a?style=flat-square)
+![LLMs](https://img.shields.io/badge/LLMs-2e8b7a?style=flat-square)
+![LangChain](https://img.shields.io/badge/LangChain-555?style=flat-square)
+![LlamaIndex](https://img.shields.io/badge/LlamaIndex-555?style=flat-square)
+![NLP](https://img.shields.io/badge/NLP-555?style=flat-square)
+![ChromaDB](https://img.shields.io/badge/ChromaDB-555?style=flat-square)
+![AWS Neptune](https://img.shields.io/badge/AWS_Neptune_(GraphDB)-555?style=flat-square)
+![Predictive Modeling](https://img.shields.io/badge/Predictive_Modeling-555?style=flat-square)
+![HuggingFace](https://img.shields.io/badge/HuggingFace-555?style=flat-square)
+![Multi--Agent Frameworks](https://img.shields.io/badge/Multi--Agent_Frameworks-555?style=flat-square)
+
 </details>
 
 <details>
-<summary><b>📊 Business Intelligence & Enterprise Visualization (Click to Expand)</b></summary>
+<summary><b>Business Intelligence and Visualization</b></summary>
 <br>
 
-* **Tableau Suite**: Tableau Desktop (Certified Associate), Tableau Server Admin, Row-Level Security, Interactive Dashboard Architecture, 6x Viz of the Day.
-* **Power BI / Microsoft Stack**: DAX, Power Query, complete legacy migration lead (Qlik/Spotfire -> Power BI).
-* **Dataiku**: Low-code ML-ops, predictive flow orchestration, Dataiku Core Designer.
-* **Specialized BI Platforms**: TIBCO Spotfire, QlikView, Qlik Sense, SSRS.
-* **Alteryx**: Advanced workflows, complex spatial modeling, custom analytical macros.
+![Tableau](https://img.shields.io/badge/Tableau-E97627?style=flat-square&logo=tableau&logoColor=white)
+![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=flat-square&logo=powerbi&logoColor=black)
+![Dataiku](https://img.shields.io/badge/Dataiku-2AB1AC?style=flat-square)
+![Alteryx](https://img.shields.io/badge/Alteryx-0078C0?style=flat-square)
+![Qlik Sense](https://img.shields.io/badge/Qlik_Sense-009848?style=flat-square)
+![TIBCO Spotfire](https://img.shields.io/badge/TIBCO_Spotfire-555?style=flat-square)
+![SSRS](https://img.shields.io/badge/SSRS-555?style=flat-square)
+![R Studio](https://img.shields.io/badge/R_Studio-276DC3?style=flat-square&logo=r&logoColor=white)
+
 </details>
 
 <details>
-<summary><b>💻 Programming Languages & Database Infrastructure (Click to Expand)</b></summary>
+<summary><b>Programming and Data Engineering</b></summary>
 <br>
 
-* **Languages**: Python (AI/ML development, ETL orchestration, automation, OCR), R (statistical models, RShiny web apps), SAS (Clinical trial SAS Base modeling), Advanced PL-SQL, VBA/Excel macros.
-* **Cloud & Warehouses**: Snowflake (RWE & clinical data warehouses), AWS Cloud Architecture (S3, Redshift, AWS Neptune), Hadoop Clusters.
-* **Data Integration / ETL**: Informatica IICS, Alteryx Designer, automated API/JSON schedulers.
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+![R](https://img.shields.io/badge/R-276DC3?style=flat-square&logo=r&logoColor=white)
+![SAS](https://img.shields.io/badge/SAS_Base-1E6EB0?style=flat-square)
+![PL/SQL](https://img.shields.io/badge/PL/SQL-555?style=flat-square)
+![VBA](https://img.shields.io/badge/VBA-217346?style=flat-square)
+![Informatica IICS](https://img.shields.io/badge/Informatica_IICS-FF4D00?style=flat-square)
+![ETL/ELT](https://img.shields.io/badge/ETL/ELT_Pipelines-555?style=flat-square)
+![RPA](https://img.shields.io/badge/RPA_Automation-555?style=flat-square)
+
 </details>
 
 <details>
-<summary><b>🏢 Pharma Domain Expertise (Click to Expand)</b></summary>
+<summary><b>Cloud and Database Infrastructure</b></summary>
 <br>
 
-* **Enterprise Sectors**: Clinical Development, Medical Affairs, Regulatory Affairs, Real-World Evidence (RWE), Corporate Finance.
-* **Data Standards & Auditing**: SOX Security & Compliance, Clinical Trial Data Standards, EMA & MHRA Diversity Mandates, SAP ECC/GRC.
-</details>
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white)
+![Snowflake](https://img.shields.io/badge/Snowflake-29B5E8?style=flat-square&logo=snowflake&logoColor=white)
+![Redshift](https://img.shields.io/badge/Redshift-8C4FFF?style=flat-square&logo=amazonaws&logoColor=white)
+![Oracle](https://img.shields.io/badge/Oracle-F80000?style=flat-square&logo=oracle&logoColor=white)
+![Teradata](https://img.shields.io/badge/Teradata-F37440?style=flat-square)
+![MS SQL](https://img.shields.io/badge/MS_SQL-CC2927?style=flat-square&logo=microsoftsqlserver&logoColor=white)
+![Vertica](https://img.shields.io/badge/Vertica-555?style=flat-square)
+![Hadoop](https://img.shields.io/badge/Hadoop-66CCFF?style=flat-square&logo=apachehadoop&logoColor=black)
 
----
-
-## ⏳ Interactive Career Timeline (Collapsible)
-
-*To see the underlying roles, responsibilities, quantitative metrics, and accomplishments for any position, click the dropdowns below.*
-
-### 🏢 June 2020 — May 2026: Jazz Pharmaceuticals (Remote, USA)
-<details>
-<summary><b>🔍 View Role: Associate Director, Advanced R&D Data Solutions</b></summary>
-<br>
-
-> **Core Focus**: Leading cross-functional team scaling advanced analytics, AWS data lakes, Snowflake RWE platforms, and Generative AI microservices.
-
-#### 📊 Key Stats
-* ⏱️ **6 Weeks Saved** per clinical planning cycle
-* 🎯 **92% ML Accuracy** predicting study timeline delays
-* 💸 **~$1M Tax Savings** via strategic capacity analytics
-
-#### 🚀 Primary Achievements
-* **Engineered RAG-based AI Search Engine** for Global Trial Inclusiveness, automating compliance checks against EMA and MHRA guidelines; slashed regulatory planning cycles by 6 weeks and ensured 100% adherence to diversity mandates.
-* **Developed predictive ML models** for clinical trial operations that identified potential bottlenecks with 92% accuracy, preventing an estimated 7 months in trial delays.
-* **Automated Regulatory Intelligence via NLP algorithms** to monitor global policy shifts, increasing risk-detection speed by 5x and ensuring zero missed alerts for labeling updates and product recalls across the Jazz portfolio.
-* **Architected AWS cloud-based centralized data lake/warehouse** integrating 15+ disparate R&D systems, enabling reliable, governed data access for 100+ R&D professionals.
-* **Drove Snowflake adoption** for RWE analytics and oversaw the migration of clinical data workflows into Snowflake to improve performance, scalability, and accessibility.
-* **Developed Capacity Planning and Resource Management dashboards** using Planisware, Workday, and Fieldglass data to track R&D resource utilization, generating ~$1M in tax savings.
-* **Led migration of legacy BI platforms** (Spotfire, QlikView, Tableau) to unified Power BI enterprise architecture, eliminating fragmentation and reducing maintenance overhead by 60%.
-
-```
-🛠️ Tech Utilized: RAG, LLMs (LangChain), NLP, ChromaDB, AWS Neptune (Graph), Python, SQL, Snowflake, AWS Redshift, Power BI, Alteryx, Dataiku
-```
 </details>
 
 ---
 
-### 🏢 Nov 2018 — June 2020: Deloitte (Philadelphia, PA)
+## Experience
+
 <details>
-<summary><b>🔍 View Role: Lead Applications Advisor and Engineer</b></summary>
+<summary><b>Analytics and AI Product Delivery Lead &nbsp;|&nbsp; Large-Scale Biopharmaceutical Organization &nbsp;|&nbsp; Jun 2020 – May 2026</b></summary>
 <br>
 
-> **Core Focus**: Enterprise consulting engagements specializing in predictive model architecture and automated workflow optimization for life sciences clients.
+Built the R&D data and AI function from the ground up, scaling it into a platform serving 100+ professionals across clinical, regulatory, and medical affairs. Work ranged from hands-on engineering to product strategy and C-suite communication.
 
-#### 📊 Key Stats
-* 📈 **10% Processing Efficiency Increase** via robotics
-* 🤖 **2+ Custom Robotic Process Automation Bots** deployed
+**AI and Machine Learning**
+- Built a hybrid RAG-based AI tool to detect and recommend fixes for data quality issues across 20+ integrated source systems, combining deterministic and probabilistic rule sets to improve data accuracy and trust in downstream analytics
+- Developed an agentic RAG search engine for compliance automation, cutting regulatory planning cycles by 6 weeks and achieving 100% adherence to diversity mandates across two major global standards bodies
+- Built predictive ML models for large-scale operational programs that identified bottlenecks with 92% accuracy, preventing an estimated 7 months of downstream delays
+- Automated regulatory intelligence monitoring via NLP pipelines, increasing risk-detection speed by 5x with zero missed alerts across a global product portfolio
 
-#### 🚀 Primary Achievements
-* Delivered core consulting engagements in data wrangling, visualization, predictive modeling, and AI/ML automation for external pharmaceutical and enterprise clients.
-* **Implemented RPA bots using Python/VBA** for OCR and SAP ERP data extraction, resulting in a 10% increase in data processing efficiency.
-* Created enterprise-grade macros, analytical applications, and scalable processing workflows in Alteryx to eliminate manual data-wrangling efforts.
+**Data Platform and Engineering**
+- Architected an AWS cloud-based centralized data lake integrating 15+ enterprise source systems, enabling governed data access for 100+ professionals
+- Led Snowflake adoption for analytics workloads, migrating clinical data workflows off legacy systems to improve performance and scalability
+- Built ETL/ELT pipelines via Alteryx, Informatica IICS, and Python to enforce data quality at ingestion
+- Led consolidation of four fragmented BI platforms into a unified Power BI enterprise architecture, reducing maintenance overhead by 60%
 
-```
-🛠️ Tech Utilized: Alteryx Advanced, Python (Automation), VBA, Complex SQL, SAP ERP
-```
+**Analytics and Reporting**
+- Built executive dashboards with Finance, Operations, and Strategy teams, saving 150+ hours annually in manual reporting
+- Designed capacity planning dashboards integrating three workforce management platforms, generating ~$1M in tax savings
+- Developed real-time data quality monitoring dashboards providing visibility into data health across multiple concurrent programs
+
+`RAG` `Agentic AI` `LangChain` `NLP` `ChromaDB` `AWS Neptune` `Python` `Snowflake` `AWS Redshift` `Power BI` `Tableau` `Alteryx` `Informatica IICS` `Dataiku`
+
+</details>
+
+<details>
+<summary><b>Lead Applications Advisor and Engineer &nbsp;|&nbsp; Deloitte &nbsp;|&nbsp; Nov 2018 – Jun 2020</b></summary>
+<br>
+
+Consulting engagements across data wrangling, advanced visualization, predictive modeling, and AI/ML automation for enterprise clients.
+
+- Implemented RPA bots using Python and VBA for OCR-based data extraction and ERP integration, increasing processing efficiency by 10%
+- Built Alteryx macros, analytical apps, and automated workflows to eliminate manual data preparation across client teams
+
+`Alteryx` `Python` `VBA` `RPA` `SAP ERP` `SQL`
+
+</details>
+
+<details>
+<summary><b>Senior BI Analyst &nbsp;|&nbsp; United BioSource Corporation (fmr. Express Scripts) &nbsp;|&nbsp; Dec 2017 – Nov 2018</b></summary>
+<br>
+
+- Applied statistical analysis and predictive modeling in R on large claims datasets to improve accuracy of patient responsibility determination
+- Architected interactive Tableau dashboards centralizing sales and field activity data for commercial and research teams
+- Developed SSRS reports using advanced SQL and stored procedures for operational reporting
+
+`R` `Tableau` `Oracle SQL` `SSRS`
+
+</details>
+
+<details>
+<summary><b>Associate Business Intelligence Consultant &nbsp;|&nbsp; The Hartford Financial Services &nbsp;|&nbsp; Mar 2017 – Nov 2017</b></summary>
+<br>
+
+- Built ETL pipelines using SAS Base, R, and Alteryx for risk analytics and data engineering solutions
+- Extracted and transformed data across Oracle, SQL Server, and Hadoop using advanced SQL
+
+`SAS Base` `R` `Alteryx` `Oracle` `Hadoop`
+
+</details>
+
+<details>
+<summary><b>Business Systems Intern &nbsp;|&nbsp; Express Scripts &nbsp;|&nbsp; May 2016 – Dec 2016</b></summary>
+<br>
+
+- Administered Tableau Server including dashboard publishing, refresh scheduling, and row-level security
+- Built and maintained SharePoint approval workflows for report governance across multiple client accounts
+
+`Tableau Server` `SharePoint`
+
+</details>
+
+<details>
+<summary><b>Business Intelligence Analyst (Sr. Systems Engineer) &nbsp;|&nbsp; Infosys Limited &nbsp;|&nbsp; Sep 2012 – Jul 2015</b></summary>
+<br>
+
+- Developed weekly and monthly risk analysis reports using complex SQL queries from enterprise data systems
+- Built SOX Security and Compliance reports via SAP ECC and GRC transaction codes
+
+`SAP ECC` `SAP GRC` `SQL Server`
+
 </details>
 
 ---
 
-### 🏢 Dec 2017 — Nov 2018: United BioSource Corporation (Express Scripts)
-<details>
-<summary><b>🔍 View Role: Senior BI Analyst</b></summary>
-<br>
+## Education
 
-> **Core Focus**: Deploying statistics and commercial reporting models for therapeutic patient datasets.
-
-#### 📊 Key Stats
-* 🎯 **95%+ Determined Accuracy** for patient coverage claims
-* 📈 **10+ Interactive Dashboards** deployed to market
-
-#### 🚀 Primary Achievements
-* **Applied statistical analysis and predictive modeling using R** for ERA/835 claim datasets, improving accuracy of patient responsibility determinations.
-* **Architected interactive Tableau dashboards** for commercial and R&D teams, centralizing drug sales, product operations, and HCP call analytics data.
-* Developed and optimized complex SSRS reports using stored procedures and advanced SQL code to manage static regulatory and client billing workflows.
-
-```
-🛠️ Tech Utilized: R programming, Tableau, Oracle SQL, Microsoft SSRS
-```
-</details>
+| Degree | Institution | Year |
+|---|---|---|
+| Master of Business Administration | University of Illinois Urbana-Champaign | 2022 |
+| MS, Management Information Systems | University of South Florida | 2016 |
+| BE, Computer Engineering | University of Pune, India | 2012 |
 
 ---
 
-### 🏢 Mar 2017 — Nov 2017: The Hartford Financial Services (Hartford, CT)
-<details>
-<summary><b>🔍 View Role: Associate Business Intelligence Consultant</b></summary>
-<br>
+## Certifications
 
-#### 📊 Key Stats
-* ⚙️ **30% Ingestion Speedup** for big data
-* 🗄️ **10M+ Rows** queried across disparate database architectures
-
-#### 🚀 Primary Achievements
-* Constructed scalable, clean ETL pipelines using SAS Base, R programming, and Alteryx for risk analytics and complex data engineering solutions.
-* Utilized advanced Oracle SQL, SQL Server, and Hadoop clusters to parse and extract critical risk modeling metrics.
-
-```
-🛠️ Tech Utilized: SAS Base 9, R programming, Alteryx, Oracle SQL, SQL Server, Hadoop
-```
-</details>
-
----
-
-### 🏢 May 2016 — Dec 2016: Express Scripts (St. Louis, MO)
-<details>
-<summary><b>🔍 View Role: Business Systems Intern</b></summary>
-<br>
-
-#### 🚀 Primary Achievements
-* Orchestrated Tableau Server administration including dashboard uploads, scheduling data refreshes, and managing row-level security permissions.
-* Created and optimized corporate SharePoint approval workflows for publishing dynamic and static reports across multiple internal business departments.
-
-```
-🛠️ Tech Utilized: Tableau Server Administration, SharePoint Developer
-```
-</details>
-
----
-
-### 🏢 Sep 2012 — July 2015: Infosys Limited (Pune, India)
-<details>
-<summary><b>🔍 View Role: Business Intelligence Analyst (Sr. Systems Engineer)</b></summary>
-<br>
-
-#### 🚀 Primary Achievements
-* Developed and analyzed weekly & monthly operational risk analysis reports extracted using complex SQL queries.
-* Developed and published SOX Security & Compliance reports by executing Transaction codes in SAP ECC and GRC systems.
-
-```
-🛠️ Tech Utilized: SAP ECC, SAP GRC, SQL Server, Analytical SQL Queries
-```
-</details>
-
----
-
-## 🎓 Education & Credentials
-
-* **Master of Business Administration (MBA)** — University of Illinois, Urbana-Champaign (Dec 2022)
-* **Master of Science in Management Information Systems (MS MIS)** — University of South Florida, Tampa (Dec 2016)
-* **Bachelor of Engineering in Computer Engineering (BE)** — University of Pune, India (Jun 2012)
-
----
-
-## 📜 Professional Certifications
-
-* 🏆 **Tableau Desktop Certified Associate** — Enterprise Visualization & Server Integration
-* 🏆 **Alteryx Advanced Designer** — Complex ETL & Workflow Optimization
-* 🏆 **Six Sigma Black Belt Certification** — Process Improvement & Statistical Control
-* 🏆 **SAS Certified Base Programmer (SAS 9)** — Clinical Data & Ingestion Analysis
-* 🏆 **Dataiku Core Designer** — Machine Learning Operations (ML-Ops)
+| | |
+|---|---|
+| ![Tableau](https://img.shields.io/badge/Tableau_Desktop_Certified_Associate-E97627?style=flat-square&logo=tableau&logoColor=white) | ![Alteryx](https://img.shields.io/badge/Alteryx_Advanced_Designer-0078C0?style=flat-square) |
+| ![Dataiku](https://img.shields.io/badge/Dataiku_Core_Designer-2AB1AC?style=flat-square) | ![Six Sigma](https://img.shields.io/badge/Six_Sigma_Black_Belt-1F4E79?style=flat-square) |
+| ![SAS](https://img.shields.io/badge/SAS_Certified_Base_Programmer-1E6EB0?style=flat-square) | |
 
 ---
 
 <div align="center">
-  <p><b>Designed and developed with ⚡ by Nitin Paighowal</b></p>
+
+![Louisville KY](https://img.shields.io/badge/Louisville,_KY-555?style=flat-square)
+&nbsp;
+![Green Card](https://img.shields.io/badge/US_Permanent_Resident-No_Sponsorship_Required-2e8b7a?style=flat-square)
+&nbsp;
+[![Email](https://img.shields.io/badge/Get_in_Touch-nitin.paighowal@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:nitin.paighowal@gmail.com)
+
 </div>
